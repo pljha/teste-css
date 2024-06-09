@@ -1,20 +1,20 @@
 {
-    "Peter":35,
-    "Ben":37,
-    "Joe":43,
     "golf-battle": {
         "titulopaginaprincipal":"GOLF BATTLE MOD ",
         "titulovideo":"GOLF BATTLE MOD versao | AUTO WIN",
-        "pegarversao": "https://apkcombo.com/golf-battle/games.onebutton.golfbattle/"
+        "pegarversao": "https://apkcombo.com/golf-battle/games.onebutton.golfbattle/",
+        "linkvideo":"asdasdasdasdasdasd"
     },
     "mini-tennis": {
         "titulopaginaprincipal":"MINI TENNIS MOD ",
         "titulovideo":"MINI TENNIS MOD versao | AUTO WIN",
-        "pegarversao": "https://apkcombo.com/mini-tennis-perfect-smash/com.miniclip.minitennis/"
+        "pegarversao": "https://apkcombo.com/mini-tennis-perfect-smash/com.miniclip.minitennis/",
+        "linkvideo":"asdasdasdasdasdasd"
     },
     "cricket-league": {
-        "titulopaginaprincipal":"MINI TENNIS MOD ",
-        "titulovideo":"MINI TENNIS MOD versao | AUTO WIN",
-        "pegarversao": "https://apkcombo.com/mini-tennis-perfect-smash/com.miniclip.minitennis/"
+        "titulopaginaprincipal":"CRICKET LEAGUE MOD ",
+        "titulovideo":"CRICKET LEAGUE versao | AUTO WIN",
+        "pegarversao": "https://apkcombo.com/pt/cricket-league/com.miniclip.cricketleague/",
+        "linkvideo":"https://video.wixstatic.com/video/38a2c0_b5c122760f1c436bbb45cd67ed99db60/720p/mp4/file.mp4"        
     }
 }
