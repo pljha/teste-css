@@ -25,7 +25,7 @@
             novaDiv.classList.add('imagem');
 
             const img = document.createElement('img');
-            img.src = "golfbattlemini.png"; // Substitua "nova-imagem.png" pelo caminho da sua nova imagem
+            img.src = "imagens/golfbattlemini.webp"; // Substitua "nova-imagem.png" pelo caminho da sua nova imagem
             img.alt = "Descrição da nova imagem";
 
             const legendaDiv = document.createElement('div');
