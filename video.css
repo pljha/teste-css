@@ -80,7 +80,7 @@ html, body {
 }
 
 
-@media (min-width:0px) and (max-width:600px){ 
+@media (min-width:0px) and (max-width:700px){ 
     html{
         /* background-color: rgb(255, 123, 0); */
     }     
@@ -193,7 +193,7 @@ html, body {
     }
 }
 
-@media (min-width:600px){
+@media (min-width:700px){
     .menu, .menu-icon{
         display: none;
     }
