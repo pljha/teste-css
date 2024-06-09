@@ -149,7 +149,7 @@ html, body {
     }    
     .menu a:hover {
 
-        color: #03f7ff;
+        /*color: #03f7ff;*/
         transition: 0s;
     }
     .menu-icon.change .fa-bars {
