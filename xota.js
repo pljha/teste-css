@@ -1,7 +1,7 @@
         const destaqueContainer = document.querySelector('.destaque');
         const larguraTela = window.innerWidth;
 
-        if (larguraTela > 0 && larguraTela < 400) {
+        if (larguraTela > 0 && larguraTela < 700) {
             // Verifica se a largura da tela está entre 200px e 400px
             const ultimaDiv = document.createElement('div');
             ultimaDiv.classList.add('imagem');
