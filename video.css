@@ -1,0 +1,311 @@
+html{
+    background-color: #03ff10;
+    color: #f1f1f1;
+}
+body{
+    background-color: rgb(255, 0, 191);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 7vw;
+    margin-right: 74%;
+}
+.barra_de_navegacao{
+    background-color: #ff5e00;
+    position: relative;
+    margin: -15.6px -0%;
+    background-color: rgb(0, 255, 255);
+}
+.barra_de_navegacao ul{
+    list-style: none;
+    padding: 0.8%;    
+    background-color: rgb(0, 47, 255);
+    display: flex;
+    justify-content: right;
+    /* border-bottom: 1px solid #1d1d1d;
+    box-shadow: 
+                0 4px 8px -2px rgb(255, 0, 242), 
+                0 8px 16px -4px rgb(1, 247, 255);  */
+}
+.barra_de_navegacao li{   
+    margin: auto 0.8%; 
+    background-color: rgb(245, 8, 8);
+    /* padding-left: 30px; */
+    font-size: 1vw;
+    font-family: "Open Sans", sans-serif;    
+    font-weight: 500;    
+    font-variation-settings: "wdth" 100;
+}
+.principal{
+    background-color: aqua;
+    width: 97%;
+    /* padding: 0px 0px 100% 0px; */
+    position: relative;
+    margin: auto auto auto 3%;  
+    font-size: 1.1vw;
+    font-family: "Roboto", sans-serif;    
+    font-weight: 500;
+}
+/* .video{
+    width: 75%;
+    background-color: red;
+} */
+.video{
+    background-color: blueviolet;
+    width: 70%;
+    margin-top: 2%;
+}
+.video h1{
+    margin-top: 0.8%;
+    background-color: blue;
+    color: rgb(21, 255, 0);
+    /* font-size: 1.5vw;
+    font-family: "Roboto", sans-serif;    
+    font-weight: 500;     */
+}
+.outrosMods{
+    display: none;
+    top: 0;
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    margin-left: 76%;
+    border-radius: 12px;
+    width: 23%;
+    height: 100%;
+    text-align: center;
+}
+.outrosMods h1{
+    margin: 0%;
+    display: inline-block;
+    font-size: 1.5vw;
+    background-color: orange;
+    color: red;
+}
+
+.rolagem{    
+    margin: 5% 5%;
+    height: 90%;
+    width: 90%;
+    color: blue;
+    background-color: aqua;
+    overflow-y: auto;  /* Permite rolagem vertical */
+    overflow-x: hidden; /* Esconde a rolagem horizontal */
+}
+.demonstracao{
+    position: relative;
+    padding: 0%;    
+    margin: 0% 0% 1% 0%;
+    /* background-color: blue; */
+    width: 100%;
+    /* font-size: 1.1vw;
+    font-family: "Roboto", sans-serif;    
+    font-weight: 500;     */
+}
+.demonstracao img{
+    width:100%;
+    height:100%;
+    /* display: inline-block; */
+}
+.nomeDoJogo{
+    left: 0;
+    bottom: 0;
+    margin-left: 0.6%;
+    margin-bottom: 2.3%;
+    position: absolute;
+    display: inline-block;
+    /* margin-left: -99.5%;
+    margin-top: 48.5%; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+.versaoDoJogo{
+    position: absolute;
+    right: 0.6%;
+    top: 1.5%;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.733);
+    font-size: 1.1vw;    
+}
+.tituloVideo{
+    position: absolute;
+    width: 75%;
+    /* background-color:yellow; */
+    color: yellow;
+}
+.tituloVideo h1{
+    margin: 0.7% 0% 0% 0%;
+    font-size: 1.4vw;
+    /* position: fixed; */
+    /* top: 0%; */
+}
+
+
+@media (min-width:0px) and (max-width:450px){ 
+    html{
+        background-color: rgb(255, 123, 0);
+    }     
+        .barra_de_navegacao{
+        background-color: rgb(30, 255, 0);
+        top: 0%;
+        padding-top: 3%;
+        margin-bottom: 0.5%;
+        width: 100%;
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        background-color: #0f0f0f;
+        margin: 4% 0 0 2%;
+        width: 25vw;
+    }
+    .barra_de_navegacao ul{
+        display: none;
+        
+    }
+    .menu-icon {
+        position: relative;
+        background-color: #ff00dd;
+        margin-top: 5%;
+        margin-left: 87.7%;
+        width: 0%;
+        z-index: 1000;
+        font-size: 10vw;
+        color: #f1f1f1;
+    }
+    .fa-bars{
+        color: #1d1d1d;
+        background-color: rgb(38, 0, 255);
+        border: 1px solid #1d1d1d;
+        
+    }
+    .menu-icon .fa-times{
+        display: none;
+    }
+    .menu {
+        position: absolute;
+        height: 52vw;
+        width: 0;
+
+        top: 0;
+        right: 0;
+
+        background-color: #0f0f0f;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 15%;
+        z-index: 999;
+        
+    }
+    .menu a {
+        background-color: #ff5e00;
+        text-align: center;
+        margin-top: 7vw;
+
+        text-decoration: none;
+
+        color: #f1f1f1;
+        display: block;
+        transition: 0s;
+        font-size: 4vw;
+        font-family: "Roboto", sans-serif;    
+        font-weight: 600;
+        border: 1px solid #1d1d1d;
+    }    
+    .menu a:hover {
+
+        color: #03f7ff;
+        transition: 0s;
+    }
+    .menu-icon.change .fa-bars {
+        display: none;
+
+    }
+    .menu-icon.change .fa-times {
+        display: inline;
+        position: relative;
+        margin-left: 1vw;
+        color: #f1f1f1;
+    }
+    .fa-times {
+        display: none;
+
+    }
+    .menu.open {
+        width: 30%;
+        transition: width 0.5s ease;
+    }
+    .principal{
+        width: 100%;
+        margin: 0;
+    }
+    .video{
+        width: 100%;
+        margin-top: 25%;
+    }
+    .outrosMods{
+        top: 0;
+        position: relative;
+        background-color: rgb(255, 0, 0);
+        margin: 0%;
+        border-radius: 0px;
+        width: 100%;
+        height: 0%;
+        text-align: none;
+    }
+    .outrosMods h1{
+        margin: 0%;
+        display: inline-block;
+        font-size: 1.5vw;
+        background-color: orange;
+        color: red;
+    }
+    .rolagem{    
+        margin: 0%;
+        width: 98%;
+        color: blue;
+        padding-left: 2%;
+        background-color: rgb(0, 255, 0);
+
+    }
+    .demonstracao{
+
+        display: inline-block;;  
+        margin: 0% 2.5% 1.5% 1%;
+
+        width: 45%;
+
+    }
+    .demonstracao img{
+        width:100%;
+        height:100%;
+
+    }
+    .tituloVideo{
+        /* display: none; */
+    }
+    .tituloVideo{
+        position: absolute;
+        width: 75%;
+        /* background-color:yellow; */
+        color: #f1f1f1;
+        margin-top: 1%;
+    }
+    .tituloVideo h1{
+        margin: 0.0% 0% 0% 0%;
+        font-size: 4vw;
+        /* position: fixed; */
+        /* top: 0%; */
+    }
+}
+
+@media (min-width:450px){
+    .menu, .menu-icon{
+        display: none;
+    }
+    .barra_de_navegacao > img{
+        display: none;
+    }
+}
