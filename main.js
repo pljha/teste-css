@@ -1,4 +1,4 @@
-        const destaqueContainer = document.querySelector('.destaque');
+    const destaqueContainer = document.querySelector('.destaque');
         const larguraTela = window.innerWidth;
 
         if (larguraTela > 0 && larguraTela < 400) {
@@ -38,42 +38,35 @@
             // Adiciona a nova div após o h1 na classe .lancamento
             lancamentoContainer.insertBefore(novaDiv, h1Element.nextSibling);
         }
-        function toggleMenu(x) {
-            x.classList.toggle("change");
-            const menu = document.getElementById("myMenu");
-            menu.classList.toggle("open"); // Mudança: adiciona ou remove a classe "open" do menu
+
+function toggleMenu(x) {
+    x.classList.toggle("change");
+    const menu = document.getElementById("myMenu");
+    menu.classList.toggle("open");
+}
+
+function ajustarLinks() {
+    const links = document.querySelectorAll('a.ajustavel');
+    const larguraTela = window.innerWidth;
+
+    links.forEach(link => {
+        const url = link.getAttribute('data-url');
+        if (larguraTela < 400) {
+            link.onclick = function(event) {
+                event.preventDefault();
+                abrirEmNovaAba(url);
+            };
+            link.removeAttribute('href');
+        } else {
+            link.onclick = null;
+            link.setAttribute('href', url);
         }
+    });
+}
 
-        // function abrirEmNovaAba(url) {
-        //     window.open(url, '_blank');
-        // }
+function abrirEmNovaAba(url) {
+    window.open(url, '_blank');
+}
 
-        function ajustarLinks() {
-            const links = document.querySelectorAll('a.ajustavel');
-            const larguraTela = window.innerWidth;
-
-            links.forEach(link => {
-                const url = link.getAttribute('data-url');
-                if (larguraTela < 400) {
-                    // Se a largura da tela for menor que 400, usa onclick e desabilita href
-                    link.onclick = function(event) {
-                        event.preventDefault(); // Previne o comportamento padrão do link
-                        abrirEmNovaAba(url);
-                    };
-                    link.removeAttribute('href');
-                } else {
-                    // Se a largura da tela for maior que 400, usa href e remove onclick
-                    link.onclick = null;
-                    link.setAttribute('href', url);
-                }
-            });
-        }
-
-        function abrirEmNovaAba(url) {
-            window.open(url, '_blank');
-        }
-
-        // Chama a função ao carregar a página
-        window.onload = ajustarLinks;
-        // Chama a função ao redimensionar a janela
-        window.onresize = ajustarLinks;
+window.onload = ajustarLinks;
+window.onresize = ajustarLinks;
